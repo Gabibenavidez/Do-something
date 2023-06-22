@@ -1,6 +1,6 @@
 # Do Something
 
-Do Something is a web application built with React and Vite that helps you discover and organize various activities to do. It allows you to explore different types of activities, add them to your to-do list, and mark them as completed when you're done.
+Do Something is a web application built with React and Vite that helps you discover and organize various activities to do. It allows you to explore different types of activities, add them to your to-do list.
 
 ## Table of Contents
 
