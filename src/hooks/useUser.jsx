@@ -27,7 +27,9 @@ export const useUser = () => {
       setErrorMessage("Log in successful!");
       setError(true);
       setIsLogged(true);
-      navigate('/home')
+      setTimeout(() => {
+        navigate('/home')
+      }, 900);
     } else {
       setErrorMessage("Invalid username or password");
       setError(true);
