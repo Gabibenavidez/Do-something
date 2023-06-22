@@ -1,0 +1,111 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5));
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  &__logo {
+    a {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+
+      span {
+        position: relative;
+        opacity: 0;
+        left: -10px;
+        animation: matrixLogo 4.5s linear infinite;
+
+        &:nth-child(1) {
+          animation-delay: 0.1s;
+        }
+        &:nth-child(2) {
+          animation-delay: 0.2s;
+        }
+        &:nth-child(3) {
+          animation-delay: 0.3s;
+        }
+        &:nth-child(4) {
+          animation-delay: 0.4s;
+        }
+        &:nth-child(5) {
+          animation-delay: 0.5s;
+        }
+        &:nth-child(6) {
+          animation-delay: 0.6s;
+        }
+        &:nth-child(7) {
+          animation-delay: 0.7s;
+        }
+        &:nth-child(8) {
+          animation-delay: 0.8s;
+        }
+        &:nth-child(9) {
+          animation-delay: 0.9s;
+        }
+        &:nth-child(10) {
+          animation-delay: 1s;
+        }
+        &:nth-child(11) {
+          animation-delay: 1.1s;
+        }
+        &:nth-child(12) {
+          animation-delay: 1.2s;
+        }
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &__links {
+    a {
+      margin-left: 15px;
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #fff;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@keyframes matrixLogo {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+}
